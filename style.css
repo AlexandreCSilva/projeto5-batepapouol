@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    background-color: rgb(34, 34, 34);
+    font-family: 'Roboto', sans-serif;
+    word-break: break-all;
+
+    display: flex;
+    justify-content: center;
+}
+
+.inicial {
+    background-color: #FFFFFF;
+    width: 614px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 2;
+    position: fixed;
+    top: 0;
+}
+
+.inicial img {
+    margin-top: 72px;
+    width: 230px;
+    height: 162px;
+}
+
+.inicial input {
+    margin-top: 150px;
+    width: 361px;
+    height: 84px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #D7D7D7;
+}
+
+.inicial button {
+    margin-top: 20px;
+    width: 149px;
+    height: 65px;
+    background: #E7E7E7;
+    border-radius: 9px;
+    color: #696969;
+    font-size: 30px;
+    border: 0;
+    outline: 0;
+
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.escondida {
+    display: none;
+}
+
+.topo {
+    background-color: white;
+    width: 614px;
+    height: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 0 22px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+}
+
+.digitar ion-icon,
+.topo ion-icon {
+    font-size: 44px;
+}
+
+.conteudo {
+    background-color: #E5E5E5;
+    width: 614px;
+    height: 100%;
+    padding: 110px 0;
+}
+
+.time {
+    color: #AAAAAA;
+}
+
+strong {
+    font-weight: 800;
+    font-style: bold;
+}
+
+.mensagem {
+    padding: 15px 15px;
+    margin-bottom: 8px;
+
+    background-color: #FFFFFF;
+}
+
+.system {
+    background-color: #DCDCDC;
+}
+
+.private {
+    background-color: #FFDEDE;
+}
+
+.digitar {
+    background-color: white;
+    width: 614px;
+    height: 80px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
+    padding: 0 22px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+}
+
+input {
+    width: 500px;
+    height: 78px;
+    border: 0;
+    outline: 0;
+}
+
+.digitar input {
+    font-size: 20px;
+}
+
+.menu {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.voltar {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menulateral {
+    height: 2000px;
+    overflow: auto;
+}
+
+.visivel {
+    opacity: 100%;
+    width: 614px;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 2s;
+}
+
+.invisivel {
+    width: 614px;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 2s;
+}
+
+.invisivel .menulateral{
+    width: 414px;
+    height: 100%;
+    right:  0;
+    position: absolute;
+    transform:  translate(414px, 0);
+    transition: all 2s;
+}
+
+.visivel .menulateral{
+    background-color: #FFFFFF;
+    width: 414px;
+    height: 100%;
+    right:  -414px;
+    position: absolute;
+    transform:  translate(-414px, 0);
+    transition: all 2s;
+}
+
+p  {
+    height: 80px;
+    font-size: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visibilidade,
+.usuarios {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.icone {
+    margin: 8px 18px;
+    font-size: 40px;
+}
+
+.nomeUsuarios {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.selecionadoVisibilidade .escolhido,
+.selecionado .escolhido {
+    opacity: 100%;
+}
+
+.escolhido {
+    color: #28BB25;
+    font-size: 32px;
+    opacity: 0;
+    
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.nomeando :nth-child(4),
+.nomeando :nth-child(5){
+    display: none;
+}
+
+.carregando :nth-child(2),
+.carregando :nth-child(3) {
+    display: none;
+}
+
+.carregando :nth-child(4) {
+    display: block;
+    width: 162px;
+}
+
+.carregando :nth-child(5) {
+    display: block;
+}
+
+.erro {
+    color: lightcoral;
+}

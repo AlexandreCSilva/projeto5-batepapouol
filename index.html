@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate papo Uol</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="inicial nomeando">
+        <img src="imagens/logo2.png" >
+
+        <input type="text" placeholder="Digite o seu nome">
+
+        <button class="botao" onclick="digitandoNome()">Entrar</button>
+        <img src="imagens/Radio.gif">
+        <p><strong>Carregando...</strong></p>
+        <p class="erro"></p>
+    </div>
+
+    <div class="menu escondida">
+        <div class="voltar" onclick="voltar()"></div>
+        <div class="menulateral">
+           
+        </div>
+    </div>
+
+    <div class="topo">
+        <img src="imagens/logo1.png" >
+        
+        <ion-icon name="people" onclick="menuLateral()"></ion-icon>
+    </div>
+
+    <div class="conteudo">
+       
+    </div>
+
+    <div class="digitar" onkeypress="enviarEnter(event)">
+        <input type="text" placeholder="Escreva aqui...">
+
+        <ion-icon name="send-outline" onclick="enviarMensagem()"></ion-icon>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
